@@ -1,0 +1,4 @@
+package com.spoj.classical;
+
+import java.io.BufferedReader;import java.io.IOException;import java.io.InputStreamReader;
+class LASTDIG {public static void main(String[] args) throws NumberFormatException, IOException {BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));int t = Integer.parseInt(bf.readLine().trim());String[] input;for (int i = 0; i < t; i++) {input = bf.readLine().trim().split(" ");if (Long.parseLong(input[1]) == 0) {System.out.println(1);} else {System.out.println(((int) Math.pow(Integer.parseInt(input[0]),Long.parseLong(input[1]) % 4 == 0 ? 4 : Long.parseLong(input[1]) % 4))%10);}}}}
